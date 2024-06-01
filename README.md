@@ -1,6 +1,6 @@
 # Rand - Firefox Extension
-🔥Random Username Generator
-
+🔥Random Username Generator <br><br>
+![alt text](https://raw.githubusercontent.com/ahmts/Random-Username-Generator_Firefox-Extension/main/images/app.png)<br> <br>
 This plugin allows users to generate random usernames. Users can choose the length of letter characters and add as many numeric characters as they want. After generating the username, the plugin provides a copy button to facilitate copying.
 ### Features
 
@@ -16,6 +16,8 @@ This plugin allows users to generate random usernames. Users can choose the leng
 - Click on the “Copy” button or click on the username to copy the generated username.
 
 This plugin helps users quickly and easily generate random usernames and copy usernames.
+
+![alt text](https://addons.mozilla.org/user-media/previews/thumbs/300/300234.jpg)
 
 ## How to try?
 
