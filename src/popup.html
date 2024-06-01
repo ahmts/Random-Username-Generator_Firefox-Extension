@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rand - Random Username Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2c2f3f;
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 490px;
+      width: 400px;
+    }
+    h3 {
+      margin-bottom: 20px;
+      color: #3fbef5;
+    }
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background-color: #2c2f3f;
+      border-radius: 10px;
+      padding: 20px;
+      
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="range"] {
+      width: 100%;
+      margin: 5px 0;
+    }
+    .value-container {
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3b3f54;
+      border-radius: 5px;
+      max-height: 190px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 23px;
+      background-color: none;
+      margin-bottom: 5px;
+    }
+    .username-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3b3f54;
+      border-radius: 5px;
+    }
+    .social-container {
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3b3f54;
+      border-radius: 5px;
+      max-height: 170px;
+    }
+    #username {
+      font-size: 18px;
+      font-weight: bold;
+      color: #00a7b3;
+      flex-grow: 1;
+    }
+    button {
+      padding: 8px 15px;
+      font-size: 14px;
+      background-color: #00a7b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #007a8a;
+    }
+    #copy {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    #copy svg {
+      fill: #00a7b3;
+      transition: fill 0.3s;
+    }
+    #copy:hover svg {
+      fill: #007a8a;
+    }
+    #notification {
+      
+      color: #00a7b3;
+      display: none;
+      
+    }
+    #logo {
+      width: 50px;
+      height: 50px;
+      
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Let's Start Creating a Username</h3>
+    <div class="value-container">
+      <div class="form-group">
+        <label for="length">Letter character length: <span id="lengthValue">8</span></label>
+        <input type="range" id="length" name="length" min="1" max="20" value="8">
+      </div>
+      <div class="form-group">
+        <label for="numbers">Numeric character length: <span id="numbersValue">2</span></label>
+        <input type="range" id="numbers" name="numbers" min="0" max="10" value="2">
+      </div>
+
+      <div class="button-container">
+        <button id="generate">Create it</button>
+        <p id="notification">Username copied to your clipboard!</p>
+      </div>
+
+    </div>
+    
+    <div class="username-container">
+      <div id="username"></div>
+      <button id="copy" title="Copy">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z"/>
+          <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+        </svg>
+      </button>
+    </div>
+    <h4>Support me:</h4>
+    <div class="social-container"> 
+      
+      <div>
+        <a href="https://github.com/ahmts" title="Please Visit My Github Profile"><img width="400px" src="icons/github.png" alt="GitHub" id="logo"></a>
+        <a style="padding-left: 5px;" href="https://addons.mozilla.org/tr/firefox/user/18444210/" title="Please rate me"><img width="400px" src="icons/firefox-addons-logo.png" alt="Firefox Addons" id="logo"></a>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
