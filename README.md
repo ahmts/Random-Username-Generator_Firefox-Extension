@@ -19,6 +19,18 @@ This plugin helps users quickly and easily generate random usernames and copy us
 
 ![alt text](https://addons.mozilla.org/user-media/previews/thumbs/300/300234.jpg)
 
+> [!IMPORTANT]
+> The plugin receives data by association with “random-word-api.herokuapp.com”.
+> Your data is not collected in any way and will not be sent to 3rd party services.
+> Please note that we have nothing to do with “random-word-api.herokuapp.com” in case of a new condition update.
+
+>const response = await fetch(`https://random-word-api.herokuapp.com/word?number=${count}`); //Ln 23, Col 96
+
+
+
+
+If you have any requests or problems, feel free to get in touch😊
+
 ## How to try?
 
 ### Firefox
